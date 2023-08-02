@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5% ;
+    --text-color:#A54328;
+    --tt-font: 'Source Serif 4', serif;
+    
+}
+
+body{
+
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-family: var(--tt-font);
+    background: #fff;
+
+}
+
+#container {
+    margin-inline: auto;
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.83rem;
+}
+
+p {
+    max-width: 43.5rem;
+}
+
+.descricao img {
+    width: 30rem;
+    margin: 4.6rem 0;
+}
+
+.prepare h1 {
+    margin: 3.2rem 0;
+}
+
+.prepare h2 {
+    margin-top: 2rem;
+}
+
+ul, ol {
+    padding-left: 2rem;
+}
+
+button {
+    margin: 1.7rem 0 ;
+    padding: 1rem;
+
+    border-radius: 0.6rem;
+    border: none;
+
+    font-family: var(--tt-font);
+    color: white;
+    background-color: var(--text-color);
+
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+@media (min-width:770px) {
+
+    body {
+        background-image: url(./imagem/backgroud_chesseCake.png);
+    }
+
+    #container {
+        min-width: 32rem;
+        margin: 0;
+        flex-direction: row;
+        max-width: 100vw;
+        padding: 3rem 3rem ;
+        gap: clamp(4rem, 1vh + 10rem, 20rem)
+    }
+
+    .descricao {
+        max-width: 43.5rem;
+    }
+
+    .prepare {
+        max-width: 52.5rem;
+    }
+
+}
